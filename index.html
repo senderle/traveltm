@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+text {
+    font-family: sans-serif;
+    font-weight: bold;
+    stroke-width: 0.15;
+    font-size: 2;
+    pointer-events: none;
+}
+
+.link {
+    stroke: seagreen;
+    fill: none;
+}
+
+#graph-background {
+    stroke: transparent;
+    fill: ghostwhite;
+}
+
+#id-label {
+    stroke: seagreen;
+    fill: ghostwhite;
+    stroke-width: 0.15;
+}
+
+#topic-click-label {
+    stroke: lightsteelblue;
+    stroke-width: 0.15;
+    fill: black;
+}
+
+circle {
+    stroke-width: 0.15;
+    stroke: seagreen;
+    fill: lightsteelblue;
+}
+
+</style>
+<body>
+    <div align='center' id="d3_selectable_force_directed_graph"></div>
+<script src="d3.v3.min.js"></script>
+<script src="plot.js"></script>
+<script>selectableForceDirectedGraph();</script>
